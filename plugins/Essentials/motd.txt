@@ -1,5 +1,5 @@
 &8<&m----------------------------- &8>
-        &b&l&nMinecraft&r &4&l&nServer
+            &b&l&nMinecraft&r &4&l&nServer
 
 &2Online &8> &b{ONLINE}
 &5News &8> &cWelcome!
