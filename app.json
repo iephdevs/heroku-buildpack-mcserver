@@ -24,6 +24,9 @@
     {
       "url": "heroku/jvm"
     },
+	{
+      "url": "heroku/php"
+    },
     {
       "url": "https://github.com/VigroX/heroku-buildpack-mcserver"
     }
