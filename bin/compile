@@ -95,17 +95,17 @@ mkdir -p $BUILD_DIR/bin
 [ ! -f $BUILD_DIR/uploader ] && cp $OPT_DIR/uploader $BUILD_DIR/bin
 [ ! -f $BUILD_DIR/restore ] && cp $OPT_DIR/restore $BUILD_DIR/bin
 [ ! -f $BUILD_DIR/index.rhtml ] && cp $OPT_DIR/index.rhtml $BUILD_DIR
-[ ! -f $BUILD_DIR/admin/index.php ] && cp $OPT_DIR/admin/index.php $BUILD_DIR
-[ ! -f $BUILD_DIR/admin/config.php ] && cp $OPT_DIR/admin/config.php $BUILD_DIR
-[ ! -f $BUILD_DIR/admin/authsys.php ] && cp $OPT_DIR/admin/authsys.php $BUILD_DIR
-[ ! -f $BUILD_DIR/admin/script.js ] && cp $OPT_DIR/admin/script.js $BUILD_DIR
-[ ! -f $BUILD_DIR/admin/style.css ] && cp $OPT_DIR/admin/style.css $BUILD_DIR
-[ ! -f $BUILD_DIR/admin/query/api.php ] && cp $OPT_DIR/admin/query/api.php $BUILD_DIR
-[ ! -f $BUILD_DIR/admin/query/query.php ] && cp $OPT_DIR/admin/query/query.php $BUILD_DIR
-[ ! -f $BUILD_DIR/admin/query/status.php ] && cp $OPT_DIR/admin/query/status.php $BUILD_DIR
-[ ! -f $BUILD_DIR/admin/rcon/index.php ] && cp $OPT_DIR/admin/rcon/index.php $BUILD_DIR
-[ ! -f $BUILD_DIR/admin/rcon/rcon.php ] && cp $OPT_DIR/admin/rcon/rcon.php $BUILD_DIR
-[ ! -f $BUILD_DIR/admin/res/bg.jpg ] && cp $OPT_DIR/admin/res/bg.jpg $BUILD_DIR
+[ ! -f $BUILD_DIR/admin/index.php ] && cp $OPT_DIR/admin/index.php $BUILD_DIR/admin
+[ ! -f $BUILD_DIR/admin/config.php ] && cp $OPT_DIR/admin/config.php $BUILD_DIR/admin
+[ ! -f $BUILD_DIR/admin/authsys.php ] && cp $OPT_DIR/admin/authsys.php $BUILD_DIR/admin
+[ ! -f $BUILD_DIR/admin/script.js ] && cp $OPT_DIR/admin/script.js $BUILD_DIR/admin
+[ ! -f $BUILD_DIR/admin/style.css ] && cp $OPT_DIR/admin/style.css $BUILD_DIR/admin
+[ ! -f $BUILD_DIR/admin/query/api.php ] && cp $OPT_DIR/admin/query/api.php $BUILD_DIR/admin/query
+[ ! -f $BUILD_DIR/admin/query/query.php ] && cp $OPT_DIR/admin/query/query.php $BUILD_DIR/admin/query
+[ ! -f $BUILD_DIR/admin/query/status.php ] && cp $OPT_DIR/admin/query/status.php $BUILD_DIR/admin/query
+[ ! -f $BUILD_DIR/admin/rcon/index.php ] && cp $OPT_DIR/admin/rcon/index.php $BUILD_DIR/admin/rcon
+[ ! -f $BUILD_DIR/admin/rcon/rcon.php ] && cp $OPT_DIR/admin/rcon/rcon.php $BUILD_DIR/admin/rcon
+[ ! -f $BUILD_DIR/admin/res/bg.jpg ] && cp $OPT_DIR/admin/res/bg.jpg $BUILD_DIR/admin/res
 
 chmod +x $BUILD_DIR/bin/minecraft
 chmod +x $BUILD_DIR/bin/sync
