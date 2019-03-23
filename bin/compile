@@ -89,6 +89,11 @@ if [ -n "${DROPBOX_API_TOKEN:-""}" ]; then
 fi
 
 mkdir -p $BUILD_DIR/bin
+mkdir -p $BUILD_DIR/admin
+mkdir -p $BUILD_DIR/admin/query
+mkdir -p $BUILD_DIR/admin/rcon
+mkdir -p $BUILD_DIR/admin/res
+
 [ ! -f $BUILD_DIR/minecraft ]   && cp $OPT_DIR/minecraft $BUILD_DIR/bin
 [ ! -f $BUILD_DIR/sync ]        && cp $OPT_DIR/sync $BUILD_DIR/bin
 [ ! -f $BUILD_DIR/dropbox_uploader ] && cp $OPT_DIR/dropbox_uploader $BUILD_DIR/bin

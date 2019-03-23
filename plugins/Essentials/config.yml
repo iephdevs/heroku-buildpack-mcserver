@@ -1,0 +1,165 @@
+ops-name-color: none
+nickname-prefix: ''
+max-nick-length: 18
+ignore-colors-in-max-nick-length: true
+change-displayname: true
+teleport-safety: true
+force-disable-teleport-safety: false
+teleport-cooldown: 30
+teleport-delay: 10
+teleport-invulnerability: 0
+teleport-to-center: false
+heal-cooldown: 120
+near-radius: 200
+permission-based-item-spawn: false
+spawnmob-limit: 10
+warn-on-smite: false
+drop-items-if-full: false
+notify-no-new-mail: false
+socialspy-commands:
+- msg
+- w
+- r
+- mail
+- m
+- t
+- whisper
+- emsg
+- tell
+- er
+- reply
+- ereply
+- email
+- action
+- describe
+- eme
+- eaction
+- edescribe
+- etell
+- ewhisper
+- pm
+mute-commands:
+- msg
+- w
+- r
+- mail
+- m
+- t
+- whisper
+- emsg
+- tell
+- er
+- reply
+- ereply
+- email
+- action
+- describe
+- eme
+- eaction
+- edescribe
+- etell
+- ewhisper
+- pm
+skip-used-one-time-kits-from-kit-list: false
+kits:
+  Starter:
+    delay: 28000
+    items:
+    - STONE_SWORD 1 name:&7Starter_Sword
+    - STONE_PICKAXE 1 name:&7Starter_Pickaxe
+    - STONE_SPADE 1 name:&7Starter_Shovel
+    - STONE_AXE 1 name:&7Starter_Axe
+    - APPLE 8
+sign-use-per-second: 4
+backup:
+  interval: 360
+  command: save-all
+per-warp-permission: true
+list:
+  Staff: OWNER ADMIN MOD HELPER BUILDER STAFF
+  Famous: FAMOUS
+  Online: '*'
+debug: false
+remove-god-on-disconnect: true
+auto-afk: 600
+auto-afk-kick: 1800
+freeze-afk-players: false
+disable-item-pickup-while-afk: false
+cancel-afk-on-interact: true
+cancel-afk-on-move: true
+afk-list-name: none
+death-messages: true
+allow-silent-join-quit: false
+custom-join-message: none
+custom-quit-message: none
+world-teleport-permissions: true
+default-stack-size: -1
+oversized-stacksize: 64
+repair-enchanted: true
+unsafe-enchantments: true
+register-back-in-listener: true
+login-attack-delay: 0
+max-fly-speed: 0.6
+max-walk-speed: 0.6
+mails-per-minute: 1000
+max-tempban-time: 2592000
+last-message-reply-recipient: true
+last-message-reply-recipient-timeout: 180
+milk-bucket-easter-egg: false
+send-fly-enable-on-join: false
+world-time-permissions: false
+command-cooldown-persistence: true
+npcs-in-balance-ranking: false
+pastebin-createkit: false
+allow-bulk-buy-sell: true
+update-bed-at-daytime: true
+world-home-permissions: false
+sethome-multiple:
+  default: 1
+  vip: 2
+  mvp: 3
+tpa-accept-cancellation: 0
+starting-balance: 2000
+currency-symbol: $
+max-money: 10000000
+min-money: 0
+economy-log-enabled: false
+use-bukkit-permissions: false
+minimum-pay-amount: 1
+non-ess-in-help: false
+hide-permissionless-help: true
+chat:
+  radius: 0
+  format: '&8{DISPLAYNAME}&7: &r{MESSAGE}'
+newbies:
+  announce-format: ''
+  spawnpoint: default
+  kit: starter
+respawn-listener-priority: high
+respawn-at-home: false
+spawn-on-join: false
+change-playerlist: true
+enabledSigns:
+- color
+- balance
+- buy
+- sell
+- trade
+- free
+- disposal
+- warp
+- kit
+- mail
+- enchant
+- gamemode
+- heal
+- info
+- spawnmob
+- repair
+- time
+- weather
+no-god-in-worlds:
+- custom
+command-cooldowns:
+  '*': 1
+currency-symbol-format-locale: en-US
