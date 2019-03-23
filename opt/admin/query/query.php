@@ -24,7 +24,7 @@ class Query {
 	const TYPE_HANDSHAKE = 0x09;
 	const TYPE_STAT = 0x00;
 
-	public function __construct($host, $port=25566, $timeout=3, $auto_connect = false) {
+	public function __construct($host, $port=25565, $timeout=3, $auto_connect = false) {
 
 		$this->host = $host;
 		$this->port = $port;
