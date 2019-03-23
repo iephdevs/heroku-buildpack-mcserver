@@ -22,8 +22,9 @@ Create a Heroku app, set your ngrok token, and push:
 ```sh-session
 $ heroku create
 $ heroku buildpacks:add heroku/jvm
-$ heroku buildpacks:add vigrox/minecraft
+$ heroku buildpacks:add https://github.com/VigroX/heroku-buildpack-mcserver
 $ heroku config:set NGROK_API_TOKEN="xxxxx"
+$ heroku config:set DROPBOX_API_TOKEN="xxxxx"
 $ git push heroku master
 ```
 

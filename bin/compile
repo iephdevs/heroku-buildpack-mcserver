@@ -82,10 +82,22 @@ if [ -n "${MINECRAFT_EULA:-""}" ]; then
   echo "done"
 fi
 
+if [ -n "${DROPBOX_API_TOKEN:-""}" ]; then
+  echo -n "-----> DROPBOX OAUTH... "
+  echo "OAUTH_ACCESS_TOKEN="${DROPBOX_API_TOKEN:-""} >> $BUILD_DIR/.dropbox_uploader
+  echo "done"
+fi
+
 mkdir -p $BUILD_DIR/bin
 [ ! -f $BUILD_DIR/minecraft ]   && cp $OPT_DIR/minecraft $BUILD_DIR/bin
 [ ! -f $BUILD_DIR/sync ]        && cp $OPT_DIR/sync $BUILD_DIR/bin
+[ ! -f $BUILD_DIR/dropbox_uploader ] && cp $OPT_DIR/dropbox_uploader $BUILD_DIR/bin
+[ ! -f $BUILD_DIR/uploader ] && cp $OPT_DIR/uploader $BUILD_DIR/bin
+[ ! -f $BUILD_DIR/restore ] && cp $OPT_DIR/restore $BUILD_DIR/bin
 [ ! -f $BUILD_DIR/index.rhtml ] && cp $OPT_DIR/index.rhtml $BUILD_DIR
 
 chmod +x $BUILD_DIR/bin/minecraft
 chmod +x $BUILD_DIR/bin/sync
+chmod +x $BUILD_DIR/bin/dropbox_uploader
+chmod +x $BUILD_DIR/bin/uploader
+chmod +x $BUILD_DIR/bin/restore
