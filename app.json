@@ -5,13 +5,13 @@
     "games",
     "minecraft"
   ],
-  "repository": "https://github.com/vigrox/",
+  "repository": "https://github.com/vigrox/heroku-buildpack-mcserver",
   "env": {
     "MINECRAFT_EULA": {
       "description": "Do you accept the Minecraft EULA?",
       "value": "true"
     },
-    "MINECRAFT_VERSION": {
+	"MINECRAFT_VERSION": {
       "description": "Where to download the minecraft jar?",
       "value": "https://cdn.getbukkit.org/spigot/spigot-1.8-R0.1-SNAPSHOT-latest.jar"
     },

@@ -7,14 +7,7 @@ for running a Minecraft Spigot (1.8 - 1.13) server in a [dyno](https://devcenter
 
 ## Usage
 
-Create a [free ngrok account](https://ngrok.com/) and copy your Auth token. Then create a new Git project with a `eula.txt` file:
-
-```sh-session
-$ echo 'eula=true' > eula.txt
-$ git init
-$ git add eula.txt
-$ git commit -m "first commit"
-```
+Create a [free ngrok account](https://ngrok.com/) and copy your Auth token.
 
 If preferred, install the [Heroku toolbelt](https://toolbelt.heroku.com/).
 Create a Heroku app, set your ngrok token, and push:
@@ -22,7 +15,6 @@ Create a Heroku app, set your ngrok token, and push:
 ```sh-session
 $ heroku create
 $ heroku buildpacks:add heroku/jvm
-$ heroku buildpacks:add jkutner/minecraft
 $ heroku config:set NGROK_API_TOKEN="xxxxx"
 $ git push heroku master
 ```
@@ -42,7 +34,6 @@ Server available at: 0.tcp.ngrok.io:17003
 
 Copy the `0.tcp.ngrok.io:17003` part, and paste it into your local Minecraft app
 as the server name.
-
 
 
 **Note** 
@@ -89,11 +80,3 @@ $ screen -r minecraft
 
 **WARNING** You are now connected to the Minecraft server. Use `Ctrl-A Ctrl-D` to exit the screen session. 
 (If you hit `Ctrl-C` while in the session, you'll terminate the Minecraft server.)
-
-## Customizing
-
-### Minecraft
-
-The server is able to be configured through the many files such as permissions, and ops. The setup is extremely important, as it cannot be changed. You can also add plugins to the plugins folder, and add any other files you'd like such as spigot.yml, or a world. The website can also be configured from opt/index.rhtml 
-
-**Additional Notes** The server version/software can be changed from bin/compile, and replace ```minecraft_url="https://cdn.getbukkit.org/spigot/spigot-1.8-R0.1-SNAPSHOT-latest.jar"```. Additionally, the server already contains EssentialsX and ViaVersion (For Version Support).
