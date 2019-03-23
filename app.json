@@ -11,10 +11,6 @@
       "description": "Do you accept the Minecraft EULA?",
       "value": "true"
     },
-	"MINECRAFT_VERSION": {
-      "description": "Where to download the minecraft jar?",
-      "value": "https://cdn.getbukkit.org/spigot/spigot-1.8-R0.1-SNAPSHOT-latest.jar"
-    },
     "NGROK_API_TOKEN": {
       "description": "Your personal ngrok API token",
       "required": true
