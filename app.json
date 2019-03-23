@@ -21,7 +21,7 @@
       "url": "heroku/jvm"
     },
     {
-      "url": "heroku-community/inline"
+      "url": "https://github.com/kr/heroku-buildpack-inline.git"
     }
   ]
 }
