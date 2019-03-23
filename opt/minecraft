@@ -27,6 +27,7 @@ echo "query.port=25585" >> /app/server.properties
 echo "rcon.password=IxdI3h4g" >> /app/server.properties
 echo "rcon.port=25575" >> /app/server.properties
 echo "enable-rcon=true" >> /app/server.properties
+echo "motd=\u00A7B\u00A7lMinecraft Server \u00A77> \u00A7a\u00A7lWelcome\!\u00A7r" >> /app/server.properties
 
 for f in whitelist banned-players banned-ips ops; do
   test ! -f $f.json && echo -n "[]" > $f.json

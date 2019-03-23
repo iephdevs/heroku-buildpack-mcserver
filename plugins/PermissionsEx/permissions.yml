@@ -1,0 +1,324 @@
+groups:
+  NONE:
+    options:
+      rank: '1000'
+      weight: '100'
+      prefix: '&e'
+      default: true
+    permissions:
+    - essentials.help
+    - essentials.motd
+    - essentials.afk
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.list
+    - essentials.msg
+    - essentials.ignore
+    - essentials.spawn
+    - essentials.home
+    - essentials.sethome
+    - essentials.sethome.multiple.default
+    - essentials.delhome
+    - essentials.warp
+    - essentials.warp.list
+    - essentials.warps.spawn
+    - essentials.warps.shop
+    - essentials.warps.crate
+    - essentials.tpa
+    - essentials.tpaccept
+    - essentials.tpahere
+    - essentials.tpdeny
+    - essentials.back
+    - essentials.pay
+    - essentials.worth
+    - essentials.balance
+    - essentials.balance.others
+    - essentials.balancetop
+    - essentials.sell
+    - essentials.sell.hand
+    - essentials.sell.bulk
+    - essentials.kit
+    - essentials.kits.daily
+    - essentials.kits.starter
+    - essentials.suicide
+    - essentials.oversizedstacks
+    - essentials.worlds.world
+    - essentials.worlds.world_nether
+    - essentials.worlds.world_the_end
+    - essentials.signs.use.buy
+    - essentials.signs.use.sell
+    - essentials.signs.use.kit
+    - essentials.signs.use.disposal
+    - essentials.jail.allow.help
+    - essentials.jail.allow.mail
+    - essentials.jail.allow.list
+    - essentials.chat.url
+    - essentials.msg.url
+    - modifyworld.*
+  VIP:
+    options:
+      rank: '900'
+      weight: '90'
+      prefix: '&a[VIP] &e'
+      default: false
+    permissions:
+    - essentials.hat
+    - essentials.feed
+    - essentials.near
+    - essentials.workbench
+    - essentials.compass
+    - essentials.getpos
+    - essentials.depth
+    - essentials.recipe
+    - essentials.book
+    - essentials.book.title
+    - essentials.firework
+    - essentials.tptoggle
+    - essentials.warps.end
+    - essentials.sethome.multiple.vip
+    - essentials.chat.color
+    - essentials.msg.color
+    - essentials.keepxp
+    - essentials.pay.multiple
+    - essentials.joinfullserver
+    inheritance:
+    - NONE
+  MVP:
+    options:
+      rank: '800'
+      weight: '80'
+      prefix: '&b[MVP] &e'
+      default: false
+    permissions:
+    - essentials.heal
+    - essentials.enderchest
+    - essentials.clearinventory
+    - essentials.sethome.multiple.mvp
+    - essentials.chat.format
+    - essentials.chat.magic
+    - essentials.chat.question
+    - essentials.chat.shout
+    - essentials.msg.format
+    - essentials.msg.magic
+    - essentials.nocommandcost.all
+    inheritance:
+    - VIP
+  FAMOUS:
+    options:
+      weight: '50'
+      prefix: '&d[FAMOUS] &e'
+      default: false
+    permissions:
+    - essentials.seen
+    - essentials.me
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.nick.format
+    - essentials.nick.magic
+    - essentials.realname
+    - essentials.msg.magic
+    inheritance:
+    - MVP
+  STAFF:
+    options:
+      prefix: '&c[STAFF] &e'
+      default: false
+    permissions:
+    - essentials.fly
+    - essentials.ping
+    - essentials.ptime
+    - essentials.itemdb
+    - essentials.msg.url
+    - essentials.invsee.preventmodify
+    - essentials.sudo.exempt
+    - essentials.kick.exempt
+    - essentials.ban.exempt
+    - essentials.kill.exempt
+    - essentials.mute.exempt
+    - essentials.tempban.exempt
+    - essentials.jail.exempt
+    - essentials.chat.ignoreexempt
+    - nocheatplus.checks
+    - multiworld.basic
+    inheritance:
+    - NONE
+  BUILDER:
+    options:
+      weight: '30'
+      prefix: '&6[BUILDER] &e'
+      default: false
+    permissions:
+    - essentials.gamemode
+    - essentials.gamemode.survival
+    - essentials.gamemode.creative
+    inheritance:
+    - STAFF
+  HELPER:
+    options:
+      weight: '30'
+      prefix: '&3[HELPER] &e'
+      default: false
+    permissions:
+    - essentials.invsee
+    - essentials.enderchest
+    - essentials.enderchest.others
+    - essentials.seen
+    - essentials.seen.banreason
+    - essentials.seen.extra
+    - essentials.whois
+    - essentials.jails
+    - essentials.togglejail
+    - essentials.kick
+    - essentials.ban.notify
+    - essentials.helpop.receive
+    - essentials.vanish.effect
+    - essentials.list.hidden
+    - nocheatplus.notify
+    inheritance:
+    - STAFF
+  MOD:
+    options:
+      weight: '20'
+      prefix: '&5[MOD] &e'
+      default: false
+    permissions:
+    - essentials.ext
+    - essentials.fireball
+    - essentials.lightning
+    - essentials.lightning.others
+    - essentials.tp
+    - essentials.tp.others
+    - essentials.top
+    - essentials.jump
+    - essentials.speed
+    - essentials.speed.walk
+    - essentials.speed.fly
+    - essentials.thunder
+    - essentials.weather
+    - essentials.tppos
+    - essentials.kill
+    - essentials.socialspy
+    - essentials.nuke
+    - essentials.god
+    - essentials.powertool
+    - essentials.powertooltoggle
+    - essentials.near.others
+    - essentials.near.maxexempt
+    - essentials.chat.url
+    - essentials.home.others
+    - essentials.warps.*
+    - essentials.clearinventory.others
+    - essentials.enderchest.modify
+    - essentials.firework.fire
+    - essentials.ptime.others
+    - essentials.getpos.others
+    - essentials.back.ondeath
+    - essentials.book.others
+    - essentials.feed.others
+    - essentials.heal.others
+    - essentials.gamemode.adventure
+    - essentials.gamemode.spectator
+    - essentials.invsee.modify
+    - essentials.togglejail.offline
+    - multiworld.moderate
+    inheritance:
+    - HELPER
+    - FAMOUS
+    - BUILDER
+  ADMIN:
+    options:
+      weight: '10'
+      prefix: '&4[ADMIN] &e'
+      default: false
+    permissions:
+    - essentials.teleport.cooldown.bypass
+    - essentials.setworth
+    - essentials.seen.ipsearch
+    - essentials.oversizedstacks
+    - essentials.skull
+    - essentials.skull.bypass
+    - essentials.skull.others
+    - essentials.skull.spawn
+    - essentials.speed.others
+    - essentials.vanish.interact
+    - essentials.tptoggle.others
+    - essentials.sudo
+    - essentials.chat.spy
+    - essentials.socialspy.others
+    - essentials.kill.force
+    - essentials.gc
+    - essentials.kickall
+    - essentials.setjail
+    - essentials.deljail
+    - essentials.powertool.append
+    - essentials.deljail
+    - essentials.mute.offline
+    - essentials.tempban.offline
+    - essentials.tempban.unlimited
+    - essentials.ban
+    - essentials.ban.offline
+    - essentials.banip
+    - essentials.unban
+    - essentials.unbanip
+    - essentials.tempban
+    - essentials.mute
+    - essentials.repair.all
+    - essentials.helpop
+    - essentials.eco.loan
+    - essentials.rules
+    - essentials.silentquit
+    - essentials.silentjoin
+    - essentials.kits.*
+    - essentials.bigtree
+    - essentials.break
+    - essentials.break.bedrock
+    - essentials.enchant
+    - essentials.enchantments.allowunsafe
+    - essentials.exp
+    - essentials.exp.set
+    - essentials.exp.set.others
+    - essentials.exp.give
+    - essentials.exp.give.others
+    - essentials.exp.give.others
+    - essentials.exp.others
+    - essentials.feed.cooldown.bypass
+    - essentials.fly.others
+    - essentials.gamemode
+    - essentials.gamemode.others
+    - essentials.give
+    - essentials.itemspawn.exempt
+    - essentials.itemspawn.item-all
+    - essentials.oversizedstacks
+    - essentials.god.others
+    - essentials.god.pvp
+    - vault.admin
+    - worldedit.*
+    - worldguard.*
+    - multiworld.admin
+    inheritance:
+    - MOD
+  OWNER:
+    options:
+      weight: '1'
+      prefix: '&4[OWNER] &e'
+      default: false
+    permissions:
+    - '*'
+    inheritance:
+    - ADMIN
+  INCOGNITO:
+    options:
+      weight: '0'
+      prefix: ''
+      default: false
+    inheritance:
+    - OWNER
+schema-version: 1
+users:
+  982111cc-527b-4929-b07f-c2aced144d34:
+    group:
+    - INCOGNITO
+    options:
+      name: VigroX
+    permissions:
+    - nocheatplus.notify
