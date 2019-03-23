@@ -3,6 +3,6 @@ echo "!----- Backup Syncing files to Dropbox -----!"
 #zip -9 -r backup.zip /app/*.json /app/world /app/world_nether /app/world_the_end /app/plugins
 zip -9 -r backup.zip /app/*.json `echo /app/*/ | sed 's/\/app\/bin\/ //' | sed 's/\/app\/logs\/ //'`
 sleep 3
-bin/dropbox_uploader mkdir /mchero
-bin/dropbox_uploader upload backup.zip /mchero/backup.zip
+opt/dropbox_uploader mkdir /mchero
+opt/dropbox_uploader upload backup.zip /mchero/backup.zip
 rm backup.zip
