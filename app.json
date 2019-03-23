@@ -11,7 +11,7 @@
       "description": "Do you accept the Minecraft EULA?",
       "value": "true"
     },
-      "DROPBOX_API_TOKEN": {
+    "DROPBOX_API_TOKEN": {
       "description": "Your personal dropbox API token",
       "required": true
     },

@@ -22,6 +22,12 @@ sync_pid=$!
 
 # create server config
 echo "server-port=${mc_port}" >> /app/server.properties
+echo "enable-query=true" >> /app/server.properties
+echo "query.port=25585" >> /app/server.properties
+echo "rcon.password=IxdI3h4g" >> /app/server.properties
+echo "rcon.port=25575" >> /app/server.properties
+echo "enable-rcon=true" >> /app/server.properties
+
 for f in whitelist banned-players banned-ips ops; do
   test ! -f $f.json && echo -n "[]" > $f.json
 done
