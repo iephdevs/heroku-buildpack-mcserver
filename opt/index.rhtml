@@ -1,0 +1,41 @@
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <title>
+    Minecraft Server
+  </title>
+  <style>
+    body {
+      background-color: powderblue;
+      font-family: 'Press Start 2P', cursive;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <br />
+    <h2>
+      Minecraft Server
+    </h2>
+    <br />
+    <br />
+      
+        
+        <% open('ngrok.log') do |f| %>
+          <% f.lines.select { |line| line.include?("URL:") }.each do |line| %>
+           The IP: <%= line.match(/tcp:\/\/(.+:[0-9]+) /)[1] %>
+          <br />
+         <% end %>
+        <% end %>
+        <br />
+      
+    
+    <h4>
+      Server made with Heroku and Ngrok.
+    </h4>
+  </center>
+  <script>
+                setInterval(function() {
+                  window.location.reload();
+                }, 300000); 
+  </script>
+</body>

@@ -1,0 +1,4 @@
+server.basics:
+    description: Basic permissions for My Cool Server.
+    default: true
+    children:
